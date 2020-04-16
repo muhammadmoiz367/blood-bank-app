@@ -1,0 +1,166 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+
+    /* The image used */
+    background-color: whitesmoke !important;
+    /* Used if the image is unavailable */
+    max-height: 100vh;
+    /* Resize the background image to cover the entire container */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+
+.card-image img{
+    padding: 30px 0px;
+    width: 100% !important;
+  }
+  .safeText {
+    padding: 0px 45px;
+  }
+  .safeText h3 {
+    font-weight: 300;
+    color: #d50000
+  }
+  .safeText p {
+    font-size: 16px;
+  }
+  .lginn,.lgout{
+      display: none;
+  }
+  #authButtons button{
+      background-color: #c01c2cd2 !important
+  }
+.banner1,
+.banner2 {
+    padding: 50px 0px;
+  }
+h1{
+    color:#d50000 !important;
+}
+.introSection {
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.6)), url("/img/slider-1.jpg") no-repeat center center/cover;
+    height: 70vh !important;
+    color: white !important;
+    padding: 30px !important;
+}
+.carousel-item img{
+    max-height: 450px !important ;
+}
+.carousel-caption p{
+    color:#d50000 !important;
+}
+.para {
+    font-size: 1.15em
+}
+.nav-item a{
+    color: white !important;
+    border-bottom: 4px solid transparent;
+    transition: border-bottom 1s;
+}
+.nav-item a:hover{
+    border-bottom: 4px solid white;
+    color: rgb(255, 249, 249);
+}
+footer{
+    padding: 20px;
+    background-color:#d41717fa ;
+    color: white;
+
+}
+
+/* overlay effect here */
+
+.wrapper {
+    /* position: fixed; */
+    /* Sit on top of the page content */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    min-height: 100vh;
+    /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color:rgb(78, 78, 78) !important;
+}
+
+/* Setting card images here */
+
+.card img {
+    height: 250px;
+}
+
+/* displaying all the elements none */
+
+
+/* setting the images icon in add donor modal */
+
+.modal img {
+    height: 22px !important;
+}
+.donor-table thead tr{
+    color: white;
+}
+/* ===============Media query from small phones====================== */
+
+@media only screen and (max-width:500px) {
+    .navbar {
+        display: flex;
+        justify-content: space-evenly
+    }
+    
+}
+
+/* ==============For heading sizes=================================== */
+
+@media only screen and (max-width:500px) {
+    .carousel-caption p,
+    .heading {
+        font-size: 2.3em;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    /* overlay effect here */
+
+    .wrapper {
+        /* position: fixed; */
+        /* Sit on top of the page content */
+        width: 100%;
+        /* Full width (cover the whole page) */
+        min-height: 100vh;
+        /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-size: smaller;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+/* for blood groups card */
+
+@media only screen and (max-width:600px) {
+    .card {
+        width: 300px;
+    }
+}
+
+/* for table section */
+
+@media only screen and (max-width:700px) {
+    .donor-table {
+        max-width: 10px !important;
+    }
+}
